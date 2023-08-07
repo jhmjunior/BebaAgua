@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beba água!</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Beba água!</h1>
+    </header>
+    
+    <section>
+        <div id="caixa">
+            <h4>Adicione a quantidade ingerida abaixo:</h4>
+            Litros:
+            <div id="lt-box" class="ltmlbox">
+                <label><input type="number" min="0" id="litros" class="inpquant"></label>
+            </div>
+            Mililitros:
+            <div id="ml-box" class="ltmlbox">
+                <label><input type="number" min="0" id="milil" class="inpquant"></label>
+            </div>
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <p>Quantidade absorvida até o momento:</p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
