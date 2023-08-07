@@ -3,6 +3,30 @@ let lts = document.getElementById('litros')
 let total_lts = 0
 let total_mil = 0
 
+function add100(){
+    total_mil = total_mil+100
+    res.innerHTML = ' '
+    res.innerHTML = '<p>Adicionado 100ml!</p>'
+}
+
+function add300(){
+    total_mil = total_mil+300
+    res.innerHTML = ' '
+    res.innerHTML = '<p>Adicionado 300ml!</p>'
+}
+
+function add500(){
+    total_mil = total_mil+500
+    res.innerHTML = ' '
+    res.innerHTML = '<p>Adicionado 500ml!</p>'
+}
+
+function add1k(){
+    total_lts = total_lts+1
+    res.innerHTML = ' '
+    res.innerHTML = '<p>Adicionado 1 litro!</p>'
+}
+
 
 function adicionar() {
     if (mil.value <0 || lts.value <0 || mil.value == '' || lts.value =='') {

@@ -13,17 +13,40 @@
     </header>
     
     <section>
-        <div id="caixa">
-            <h4>Adicione a quantidade ingerida abaixo:</h4>
+        <h4>Meta</h4>
+        <div>
             Litros:
             <div id="lt-box" class="ltmlbox">
-                <label><input type="number" min="0" id="litros" class="inpquant"></label>
+                <label>
+                    <button class="buttons">
+                        <img src="./assets/minus_circle.svg" class="img_buttons"/>
+                    </button>
+                        <input type="number" min="0" id="litros" class="inp_quant">
+                    <button class="buttons">
+                        <img src="./assets/plus_circle.svg" class="img_buttons"/>
+                    </button>
+                </label>
             </div>
             Mililitros:
             <div id="ml-box" class="ltmlbox">
-                <label><input type="number" min="0" id="milil" class="inpquant"></label>
+                <label>
+                    <button class="buttons">
+                        <img src="./assets/minus_circle.svg" class="img_buttons"/>
+                    </button>
+                        <input type="number" min="0" id="milil" class="inp_quant">
+                    <button class="buttons">
+                        <img src="./assets/plus_circle.svg" class="img_buttons"/>
+                    </button>
+                </label>
             </div>
-            <input type="button" value="Adicionar" onclick="adicionar()">
+            <input type="button" value="Adicionar" onclick="adicionar()" id="add_button">
+            
+        </div>
+        <div id="botoes">
+            <input type="button" value="Add. 100ml" onclick="add100()">
+            <input type="button" value="Add. 300ml" onclick="add300()">
+            <input type="button" value="Add. 500ml" onclick="add500()">
+            <input type="button" value="Add. 1L" onclick="add1k()">
             <p>Quantidade absorvida até o momento:</p>
         </div>
         <div id="res">
