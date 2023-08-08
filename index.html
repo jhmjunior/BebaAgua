@@ -21,19 +21,20 @@
                     <button class="buttons">
                         <img src="./assets/minus_circle.svg" class="img_buttons"/>
                     </button>
-                        <input type="number" min="0" id="litros" class="inp_quant">
+                        <input type="number" min="0" value="0" id="litros" class="inp_quant">
                     <button class="buttons">
                         <img src="./assets/plus_circle.svg" class="img_buttons"/>
                     </button>
                 </label>
             </div>
+            
             Mililitros:
             <div id="ml-box" class="ltmlbox">
                 <label>
                     <button class="buttons">
                         <img src="./assets/minus_circle.svg" class="img_buttons"/>
                     </button>
-                        <input type="number" min="0" id="milil" class="inp_quant">
+                        <input type="number" min="0" value="0" id="milil" class="inp_quant">
                     <button class="buttons">
                         <img src="./assets/plus_circle.svg" class="img_buttons"/>
                     </button>
@@ -43,13 +44,19 @@
             
         </div>
         <div id="botoes">
-            <input type="button" value="Add. 100ml" onclick="add100()">
-            <input type="button" value="Add. 300ml" onclick="add300()">
-            <input type="button" value="Add. 500ml" onclick="add500()">
-            <input type="button" value="Add. 1L" onclick="add1k()">
-            <p>Quantidade absorvida até o momento:</p>
+            <input type="button" value="Add. 100ml" class="add_ml_buttons" onclick="add100()">
+            <input type="button" value="Add. 300ml" class="add_ml_buttons" onclick="add300()">
+            <input type="button" value="Add. 500ml" class="add_ml_buttons" onclick="add500()">
+            <input type="button" value="Add. 1L" class="add_ml_buttons" onclick="add1k()">
         </div>
+        <p>Quantidade absorvida até o momento:</p>
+
+        
         <div id="res">
+            
+        </div>
+
+        <div id="div_limpar">
             
         </div>
     </section>

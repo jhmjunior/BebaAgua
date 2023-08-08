@@ -37,8 +37,9 @@ function adicionar() {
         total_lts = total_lts + parseInt(lts.value)
         total_mil = total_mil + parseInt(mil.value)
         milToLts()
+        div_limpar.innerHTML = `<input type="button" value="Limpar" class="add_ml_buttons" id="limpar_button" onclick="handleLimpar()">`
         res.innerHTML = ' '
-        res.innerHTML += `<p>Ao todo, foi ingerido ${total_lts} litros, e ${total_mil} ml hoje. </p>`
+        res.innerHTML += `<p>Ao todo, você ingeriu ${total_lts} litros, e ${total_mil} ml hoje. </p>`
     }
 }
 
@@ -50,4 +51,11 @@ function milToLts (){
 }
 
 
+
+function handleLimpar() {
+    res.innerHTML = ' '
+    total_lts = 0
+    total_mil = 0
+    div_limpar.innerHTML = ' '
+}
 
