@@ -27,6 +27,24 @@ function add1k(){
     res.innerHTML = '<p>Adicionado 1 litro!</p>'
 }
 
+function btn_remove_1l () {
+    lts.value = parseInt(lts.value)-1
+    
+}
+
+function btn_add_1l () {
+    lts.value = parseInt(lts.value)+1
+}
+
+function btn_remove_100ml () {
+    mil.value = parseInt(mil.value)-100
+    
+}
+
+function btn_add_100ml () {
+    mil.value = parseInt(mil.value)+100
+}
+
 
 function adicionar() {
     if (mil.value <0 || lts.value <0 || mil.value == '' || lts.value =='') {

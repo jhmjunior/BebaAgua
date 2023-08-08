@@ -43,7 +43,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-.buttons {
+.plus_minus_buttons {
     border-radius: 20%;
     background-color: rgb(6, 207, 207);
     cursor: pointer;
@@ -76,6 +76,7 @@ h4 {
 .add_ml_buttons {
     width: 75px;
     height: 20px;
+    cursor: pointer;
     background-color: rgb(6, 207, 207);
     color: aliceblue;
     border: none;
