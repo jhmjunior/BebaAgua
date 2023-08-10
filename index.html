@@ -8,12 +8,29 @@
     
 </head>
 <body>
+    <div id="modal_box">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p>Gostaria de definir uma meta diária?</p>
+                <p>Se sim, qual é a sua meta (em litros) para hoje?</p>
+                <label>
+                    <input type="number" min="0" value="0" id="modal_input"> Litros
+                    <input type="button" value="Definir" class="add_ml_buttons" id="modal_definir" onclick="modal_definir()">
+                </label>
+            </div>
+        </div>
+    </div>
     <header>
         <h1>Beba água!</h1>
     </header>
     
     <section>
+        
         <h4>Meta</h4>
+        <div id="div_button">
+            <button id="definir_meta" class="add_ml_buttons" onclick="definir_meta_btn()">Definir meta</button><br>
+        </div>
+        
         <div>
             Litros:
             <div id="lt-box" class="ltmlbox">
@@ -37,7 +54,7 @@
                         <img src="./assets/minus_circle.svg" class="img_buttons"/>
                     </button>
 
-                    <input type="number" min="0" value="000" id="milil" class="inp_quant">
+                    <input type="number" min="0" value="0" id="milil" class="inp_quant">
 
                     <button class="plus_minus_buttons" onclick="btn_add_100ml()">
                         <img src="./assets/plus_circle.svg" class="img_buttons"/>

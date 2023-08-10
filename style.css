@@ -20,8 +20,7 @@ section {
     padding: 15px;
     width: 400px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
-    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);    
 }
 
 h4 {
@@ -82,3 +81,34 @@ h4 {
     border: none;
     border-radius: 10px;
 }
+
+#definir_meta {
+    width: 80px;
+}
+
+#modal {
+   position: fixed;
+   display: flex; 
+   background-color: rgba(248, 248, 248, 0.932);
+   width: 50%;
+   height: 75%;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   margin: 10vh 25vw;
+}
+
+#div_button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#modal_input {
+    width: 50px;   
+}
+
+
+
+/*escrever mensagem, input, e quando o usuário terminar de preencher 
+fazer o modal desaparecer */
